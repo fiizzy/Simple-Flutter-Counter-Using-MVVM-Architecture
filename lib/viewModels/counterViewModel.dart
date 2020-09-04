@@ -5,7 +5,7 @@ class CounterViewModel extends ChangeNotifier {
   CounterModel mainCounter = new CounterModel(counter: 0);
 
   // int get counter {
-  //   return _mainCounter.counter;
+  //   return mainCounter.counter;
   // }
 
   increment() {

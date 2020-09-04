@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_provider/counterViewModel/counterViewModel.dart';
+import 'package:mvvm_provider/viewModels/counterViewModel.dart';
 import 'package:mvvm_provider/model/counterModel.dart';
 import 'package:provider/provider.dart';
 
