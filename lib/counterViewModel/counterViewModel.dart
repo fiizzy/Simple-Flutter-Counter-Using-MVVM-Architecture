@@ -2,23 +2,21 @@ import 'package:flutter/cupertino.dart';
 import 'package:mvvm_provider/model/counterModel.dart';
 
 class CounterViewModel extends ChangeNotifier {
-  CounterModel _mainCounter = new CounterModel();
+  CounterModel mainCounter = new CounterModel(counter: 0);
 
-  // int boy = _mainCounter.counter;
-
-  int get counter {
-    return _mainCounter.counter;
-  }
+  // int get counter {
+  //   return _mainCounter.counter;
+  // }
 
   increment() {
-    _mainCounter.counter++;
+    mainCounter.counter++;
     notifyListeners();
 
-    print(_mainCounter.counter);
+    print(mainCounter.counter);
   }
 
   decrement() {
-    _mainCounter.counter--;
+    mainCounter.counter--;
     notifyListeners();
   }
 }

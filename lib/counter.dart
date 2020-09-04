@@ -15,7 +15,6 @@ class _CounterState extends State<Counter> {
   }
 
 
-
   @override
   Widget build(BuildContext context) {
     final vm = Provider.of<CounterViewModel>(context);
@@ -28,7 +27,7 @@ class _CounterState extends State<Counter> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('The counter is ${vm.counter}'),
+            Text('The counter is ${vm.mainCounter.counter}'),
           ],
         ),
       ),
@@ -36,7 +35,7 @@ class _CounterState extends State<Counter> {
           backgroundColor: Colors.red,
           onPressed: () {
             vm.increment();
-            // print(vm.increment);
+            // print(vm.counter);
           }),
     );
   }
